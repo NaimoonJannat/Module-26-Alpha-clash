@@ -72,25 +72,27 @@
             </div>
             <!-- life  -->
             <div class="flex justify-around w-full">
+                <!-- life button  -->
                 <button class="btn bg-[#894189] text-white rounded-3xl">
                     Life
                     <i class="fa-solid fa-heart-circle-bolt"></i>
-                    <span>
+                    <span id="current-life">
                         5
                     </span>
                   </button>
+                  <!-- Score button  -->
                   <button class="btn bg-[#360490] text-white rounded-3xl">
                     Score
                     <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                    <span>0</span>
+                    <span id="current-score">0</span>
                   </button>
             </div>
         </section>
         <!-- score  -->
-        <section class="score hidden flex justify-center items-center min-h-screen">
+        <section id="scoreBoard" class="score hidden flex justify-center items-center min-h-screen">
              <div class="bg-[#7637ece0] space-y-4 p-5 rounded-xl text-white text-center">
                 <p class="text-6xl"><Span class="font-bold">Score: </Span> 00</p>
-                <button class="btn bg-white text-black p-3 text-xl rounded-lg font-semibold">Play Again</button>
+                <button onclick="play()" class="btn bg-white text-black p-3 text-xl rounded-lg font-semibold">Play Again</button>
                 <p>Practice will make you Pro!</p>
              </div>
         </section>
