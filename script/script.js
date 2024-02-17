@@ -1,6 +1,7 @@
 function play(){
     // by clicking the play button on home 
     hideElement('home');
+    hideElement('scoreBoard');
     showElement('playground');
     continuePlaying();
 }
@@ -19,6 +20,11 @@ function handleKeyboardKeyup(event){
 
     if(playerPressed === expectedAlphabet){
         console.log('You get a point');
+        // const currentScore = getValueById('current-score');
+        // const newScore= currentScore+1;
+        // setTextById('current-score', newScore);
+        
+
         // update score 
         // 1) get the Score 
         const getScoreById = document.getElementById('current-score');
@@ -28,7 +34,7 @@ function handleKeyboardKeyup(event){
         const newScore= currentScore+1;
     
         // 3) Display the score 
-        getScoreById.innerText= newScore;
+         getScoreById.innerText= newScore;
         // start a new round 
         removeBgColor(expectedAlphabet);
         continuePlaying();

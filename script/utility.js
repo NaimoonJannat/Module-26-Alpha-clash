@@ -8,6 +8,18 @@ function showElement(elementId){
     playSection.classList.remove('hidden');
 }
 
+function getValueById(elementId){
+    const element = document.getValueById(elementId);
+        const elementValueText = element.innerText;
+        const value= parseInt(elementValueText);
+        return value;
+}
+
+function setTextById(elementId, value){
+    const element=document.getElementById(elementId);
+    element.innerText= value;
+}
+
 function getRandomLetter(){
     const alphaString='abcdefghijklmnopqrstuvwxyz';
     const alphabets= alphaString.split('');
